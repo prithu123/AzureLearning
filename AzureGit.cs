@@ -24,7 +24,7 @@ namespace AzureLearning
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             log.LogInformation("Data has recieved" + requestBody);
 
-            return new OkResult();
+            return new OkObjectResult("Sucessful response from Azure");
         }
     }
 }
